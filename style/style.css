@@ -1,0 +1,251 @@
+/*NAVBAR*/
+.container-father{
+	display:grid;
+	grid-template-columns: repeat(3, 33.33%);
+	position:sticky;
+	padding:5px 10px;
+	top:0;
+	background-color:rgb(251, 252, 252);
+	place-items:center;
+}
+.container-father ul{
+	list-style-type:none;
+}
+.container-father a{
+	color: black;
+	text-decoration: none;
+}
+
+.container-son{
+	relative:left;
+}
+.nav>li{
+	float:left;
+	padding:0 10px;
+	overflow:hidden;
+	display:block;
+}
+
+.sub-menu-father>ul{
+	display:none;
+}
+.sub-menu-father:hover ul:not(.sub-menu>ul){
+	display:block;
+}
+.sub-menu>ul{
+	display:none;
+}
+
+.sub-menu:hover ul{
+	display:block;
+}
+
+.logo{
+	width:120px;
+	height:120px;
+}
+
+.container-son2{
+	float:right;
+}
+.nav2li{
+	float:right;
+	padding:0 10px;
+	
+}
+
+@media (max-width: 500px){
+  .container-father {
+    grid-template-columns: 100%; /* Solo una columna en pantallas pequeñas */
+  }
+}
+/*doby*/
+
+.contenedor{
+	display:grid;
+	grid-template-row:auto auto auto auto;
+	position: adsolute;
+	bottom: -10px;
+}
+.video {
+	grid-column: 1 / -1;
+	width: 100%;
+	height: 400px;
+	object-fit: cover; 
+}
+.contenedor-servicios{
+	display:grid;
+	grid-template-row:auto auto auto;
+	position: adsolute;
+	top:-10;
+	background-color:rgba(40, 55, 71,0.1);
+	padding:10px;
+	border: 5px solid rgba(250, 250, 250, 0.8);
+	border-radius:15px;
+}
+.contenedor-servicios-titulo h2{
+	display:grid;
+	text-align:center;
+	width: 100%;
+	color:#231EAD;
+}
+.contenedor-servicios-sotfware{
+	display:grid;
+	grid-template-columns:  repeat(3, 1fr);
+	grid-auto-rows: 1fr;
+	place-items:center;
+}
+.desarrollo-software,
+.desarrollo-web,
+.sistemas-embebidos,
+.sistemas-bd {
+	display: grid;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid rgba(253, 253, 253, 0.5);
+	border-radius: 5px;
+	width: 94%; 
+	height: 95%; /* Asegura que todas las tarjetas tengan la misma altura */
+	box-shadow: 0 0 10px rgb(253, 254, 254); /* Sombra con 50% de opacidad */
+	text-align:center;
+	color:#231EAD;
+}
+.desarrollo-software ul li,
+.desarrollo-web ul li,
+.sistemas-embebidos ul li,
+.sistemas-bd ul li{
+	color:rgb(40, 55, 55);
+	text-align:justify;
+}
+.desarrollo-software img,
+.desarrollo-web img,
+.sistemas-embebidos img,
+.sistemas-bd img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Estilo para el contenedor principal */
+.contenedor-venta {
+    position: relative;
+    width: 88%;
+    min-height: 75vh;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; /* Asegura que la imagen cubra el contenedor */
+    background-position: center;
+}
+
+/* Cuadro blanco semitransparente sobre la imagen */
+.fondo-venta {
+    position: absolute;
+    width: 90%; /* Ocupa el 80% del ancho del contenedor */
+    height: 90%; /* Ajusta la altura del cuadro */
+    background-color: rgba(52, 73, 94, 0.9); /* Blanco semitransparente */
+    z-index: -1; /* Coloca el cuadro sobre la imagen de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fondo-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+    z-index: -2; /* Imagen detrás de todo */
+}
+
+/* Contenido dentro del cuadro */
+.contenido-venta-h3,
+.contenido-venta-dispositivos{
+    position: relative;
+    z-index: 2; /* El contenido está sobre el cuadro blanco */
+    text-align: center;
+    color: white; /* Asegura que el texto sea legible */
+    font-size: 1.2rem;
+}
+.contenido-venta{
+	display:grid;
+	grid-template-row:auto auto;
+	position: adsolute;
+	place-items:center;
+}
+.contenido-venta-dispositivos{
+	display:grid;
+	grid-template-columns:  repeat(5, 5fr);
+	grid-auto-rows: 1fr;
+	place-items:center;
+	margin:15px 5px;
+}
+
+
+/*FOOTER*/
+
+.pie-pagina-father{
+	display:grid;
+	grid-template-row:auto auto;
+	position: adsolute;
+ 	bottom: 0;
+}
+.pie-pagina-father a{
+	color: white;
+	text-decoration: none;
+}
+.pie-pagina-father p,h4,label,li{
+	color: white;
+	text-decoration: none;
+}
+.pie-pagina-son{
+	background-color:rgb(40, 55, 71);
+	padding:0 15px;
+}
+.pie-pagina-son a{
+	padding:0 15px;
+}
+.pie-pagina-son2{
+	display:grid;
+	grid-template-columns: repeat(3, 33.33%);
+	background-color:rgb(40, 55, 78);
+	place-items:center;
+}
+.servicios-footer ul{
+	list-style-type:none;
+	font-size:15px;
+}
+
+.pie-pagina-son3{
+	background-color:rgb(40, 55, 71);
+	text-align:center;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+}
+.contacto{
+	background-color:rgb(40, 55, 55);
+	padding:5px;
+	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}
+
+.contacto form>button{
+  width: 20%;
+  padding: 5px 0;
+  margin: 5px auto; /* Centra el botón horizontalmente */
+  display: block; 
+}
+
+input[type="text"],
+input[type="email"], 
+input[type="tel"], 
+select, textarea{
+	width:100%;
+	border:none;
+	background-color:rgb(40, 55, 55);
+	border-bottom: 4px solid white;
+	box-sizing:border-box;
+}
